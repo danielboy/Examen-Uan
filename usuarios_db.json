@@ -1,0 +1,51 @@
+{
+    "name" : "Daniel",
+    "apellidos" : "Casillas Jimenez",
+    "matricula" : 5102734,
+    "password" : 123456,
+    "prepa" : "Preparatoria # 1",
+    "areas_afines" : [ 
+        {
+            "a1" : ''
+        }, 
+        {
+            "a2" : ''
+        }, 
+        {
+            "a3" : ''
+        }, 
+        {
+            "a4" : ''
+        }, 
+        {
+            "a5" : ''
+        }
+    ]
+}
+
+
+{
+
+    "name" : "Fabiola",
+    "apellidos" : "Casillas Jimenez",
+    "matricula" : 5102733,
+    "password" : 123456,
+    "prepa" : "Preparatoria # 1",
+    "areas_afines" : [ 
+        {
+            "a1" : ''
+        }, 
+        {
+            "a2" : ''
+        }, 
+        {
+            "a3" : ''
+        }, 
+        {
+            "a4" : ''
+        }, 
+        {
+            "a5" : ''
+        }
+    ]
+}

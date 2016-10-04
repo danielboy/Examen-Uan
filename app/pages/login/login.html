@@ -1,0 +1,31 @@
+<ion-header >
+  <ion-toolbar primary>
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login" padding>
+
+
+<ion-card>
+  <img src="../../img/ea.png"/>
+  <ion-card-content>
+  <ion-list>
+      <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input [(ngModel)] = "usercreds.name" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input [(ngModel)] = "usercreds.password" type="password"></ion-input>
+      </ion-item>
+      
+  </ion-list>
+
+  </ion-card-content>
+</ion-card>
+
+  <button full primary (click)="login(usercreds)">Entrar</button>
+ <!--<button full primary (click)="signup()">Registrarse</button>-->
+
+</ion-content>

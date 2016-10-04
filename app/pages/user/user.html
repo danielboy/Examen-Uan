@@ -1,0 +1,28 @@
+<ion-header >
+  <ion-toolbar primary>
+    <ion-title>Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="user">
+   <!--  <h2>Mi cuenta</h2>
+   <button full primary (click)="gostart()">Iniciar Test</button>
+    <button full primary (click)="logout()">Salir</button>
+    <button full primary (click)="perfil()">Información</button>-->
+
+  <ion-card (click)="gostart()">
+    <img src="../../img/test.jpg"/>
+    <div class="card-title">Iniciar Test</div>
+  <!--  <div class="card-subtitle">|***|</div>-->
+  </ion-card>
+
+  <ion-card (click)="perfil()">
+    <img src="../../img/datos.jpg"/>
+    <div class="card-title">Información</div>
+   <!-- <div class="card-subtitle">|***|</div>-->
+  </ion-card>
+
+<button full primary (click)="logout()">Salir</button>
+
+
+</ion-content>
+

@@ -1,0 +1,314 @@
+/* 1 */
+{
+    "id_area" : 1,
+    "nombre_area" : "Ciencias Sociales y Humanidades",
+    "Total_area" : 3,
+    "Questions" : [ 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }
+    ]
+}
+
+/* 2 */
+{
+    "id_area" : 2,
+    "nombre_area" : "Ciencias Económicas y Administrativas",
+    "Total_area" : 3,
+    "Questions" : [ 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }
+    ]
+}
+
+/* 3 */
+{
+    "id_area" : 3,
+    "nombre_area" : "Ciencias de la Salud",
+    "Total_area" : 3,
+    "Questions" : [ 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }
+    ]
+}
+
+/* 4 */
+{
+    "id_area" : 4,
+    "nombre_area" : "Ciencias Básicas e Ingenierías",
+    "Total_area" : 3,
+    "Questions" : [ 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }
+    ]
+}
+
+/* 5 */
+{
+    "id_area" : 5,
+    "nombre_area" : "Ciencias Biológico Agropecuarias y Pesqueras",
+    "Total_area" : 3,
+    "Questions" : [ 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }, 
+        {
+            "QuiestionNo" : 1,
+            "Question" : "¿Te Gusta Realizar programas de gestión empresarial?",
+            "correctAns" : 0,
+            "options" : [ 
+                {
+                    "option" : "Si",
+                    "ansValue" : true,
+                    "marks" : 1
+                }, 
+                {
+                    "option" : "NO",
+                    "ansValue" : false,
+                    "marks" : 0
+                }
+            ],
+            "ans" : 1
+        }
+    ]
+}
