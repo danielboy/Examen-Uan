@@ -7,7 +7,7 @@ plugins/
 .DS_Store
 Thumbs.db
 .idea
-backend/data/
-backend/
+
+
 
 
