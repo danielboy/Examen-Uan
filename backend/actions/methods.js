@@ -1,5 +1,6 @@
 var User = require('../models/user');
-//var Session = require('../models/session');
+var preguntas = require('../models/preguntas');
+var areas = require('../models/areas');
 var jwt  = require('jwt-simple');
 var config = require('../config/database');
 
@@ -107,18 +108,13 @@ var functions = {
       if(req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
         var token = req.headers.authorization.split(' ')[1];
         var decodedtoken = jwt.decode(token, config.secret);
-        //console.log(decodedtoken);
-        //console.log(req.body)
         var data =  {
-
               CS: req.body.CS,
               CSH: req.body.CSH,
               CEA:  req.body.CEA,
               CBAP: req.body.CBAP,
               CBI:  req.body.CBI
               };
-          console.log(data);
-
               User.update({_id:decodedtoken._id}, data, {}, function(err, data){
                 if (err){
                   console.log(err);
@@ -132,5 +128,38 @@ var functions = {
             }
           },
 
-        };
+
+      // Consulta Preguntas
+      preguntas: function(req, res){
+      preguntas.find({}, function(err, preguntas) {
+                if (err){
+                  console.log(err);
+                  res.json({success:false, msg:'Hola no sirve'})
+                }
+
+                else {
+                  res.json({success:true, msg:'HOla', preguntas});
+                }
+        console.log(preguntas);
+      });
+      },
+
+     // Consulta Preguntas
+      areas: function(req, res){
+      areas.find({}, function(err, areas) {
+                if (err){
+                  console.log(err);
+                  res.json({success:false, msg:'Hola no sirve'})
+                }
+
+                else {
+                  res.json({success:true, msg:'HOla', areas});
+                }
+        console.log(areas);
+      });
+      }
+
+              };
+
+
 module.exports = functions;

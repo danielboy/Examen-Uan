@@ -1,0 +1,78 @@
+[
+{
+"idconocimientoarea":1,
+"nombre":"CIENCIAS DE LA SALUD",
+"clave":"CS",
+"activo":1,
+"carreras":[
+            {"nombre":"Cirujano Dentista"},
+            {"nombre":"Licenciatura en Enfermería"},
+            {"nombre":"Médico Cirujano"},
+            {"nombre":"Químico Farmacobiólogo"},
+            {"nombre":"Licenciatura en Cultura Física y Deporte"},
+            {"nombre":"Licenciatura en Nutrición"}
+           ]
+},
+{
+"idconocimientoarea":2,
+"nombre":"CIENCIAS SOCIALES Y HUMANIDADES",
+"clave":"CSH",
+"activo":1,
+"carreras":[
+            {"nombre":"Licenciatura en Educación Infantil"},
+            {"nombre":"Licenciatura en Ciencia Política"},
+            {"nombre":"Licenciatura en Ciencias de la Educación"},
+            {"nombre":"Licenciatura en Comunicación y Medios"},
+            {"nombre":"Licenciatura en Derecho"},
+            {"nombre":"Licenciatura en Filosofía"},
+            {"nombre":"Licenciatura en Psicología"},
+            {"nombre":"Licenciatura en Lingüística Aplicada"},
+            {"nombre":"Licenciatura en Estudios Coreanos"}
+           ]
+},
+{
+"idconocimientoarea":3,
+"nombre":"CIENCIAS ECONOMICAS ADMINISTRATIVAS",
+"clave":"CEA",
+"activo":1,
+"carreras":[
+            {"nombre":"Licenciatura en Administración"},
+            {"nombre":"Licenciatura en Contaduría"},
+            {"nombre":"Licenciatura en Economía"},
+            {"nombre":"Licenciatura en Informática"},
+            {"nombre":"Licenciatura en Mercadotecnia"},
+            {"nombre":"Licenciatura en Sistemas Computacionales"},
+            {"nombre":"Licenciatura en Turismo"},
+            {"nombre":"Licenciatura en Innovación y Gestión Turística"},
+            {"nombre":"Licenciatura en Gastronomía"},
+            {"nombre":"Licenciatura en Gestión Empresarial en línea"},
+            {"nombre":"Licenciatura en Negocios Internacionales"}
+           ]
+},
+{
+"idconocimientoarea":4,
+"nombre":"CIENCIAS BIOLOGICO-AGROPECUARIAS Y PESQUERAS",
+"clave":"CBAP",
+"activo":1,
+"carreras":[
+            {"nombre":"Licenciatura en Biología"},
+            {"nombre":"Ingeniería Pesquera"},
+            {"nombre":"Ingeniero Agrónomo"},
+            {"nombre":"Medicina Veterinaria y Zootecnia"},
+            {"nombre":"Ingeniería en Acuicultura"}
+           ]
+},           
+{
+"idconocimientoarea":5,
+"nombre":"CIENCIAS BASICAS E INGENIERIAS",
+"clave":"CBI",
+"activo":1,
+"carreras":[
+            {"nombre":"Ingeniería en Control y Computación"},
+            {"nombre":"Ingeniería en Electrónica"},
+            {"nombre":"Ingeniería Mecánica"},
+            {"nombre":"Ingeniería Química"},
+            {"nombre":"Licenciatura en Matemática"}
+           ]
+}
+]
