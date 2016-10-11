@@ -88,6 +88,24 @@ export class AuthService {
         })
     }
 
+   areas() {
+        return new Promise(resolve => {
+            let headers = new Headers();
+          //   headers.append('Authorization', 'Bearer ' + this.AuthToken.token);
+             this.http.get('http://localhost:3333/areas/', {headers: headers}).subscribe(data => {
+                this.data = data;
+                 if(data.json().areas){
+
+                     resolve(data.json().areas);
+                 }
+                 else
+                     resolve(false);
+
+                     console.log(data)
+             });
+        })
+    }    
+
    putinfo(resul) {
         return new Promise(resolve => {
             console.log(resul)

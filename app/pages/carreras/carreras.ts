@@ -1,19 +1,33 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import {AuthService} from '../../services/authservice';
 
-/*
-  Generated class for the CarrerasPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   templateUrl: 'build/pages/carreras/carreras.html',
+  providers: [AuthService],
 })
 export class CarrerasPage {
 
-  constructor(private navCtrl: NavController) {
+    private service: any;  
+    area: any;
+    obj: any;
+    
+  constructor(private authservice: AuthService,private navCtrl: NavController, public navParams: NavParams) {
+  this.obj = navParams.data.obj
+  this.service = authservice;
 
   }
+
+onPageLoaded() {
+
+  console.log(this.obj)
+            this.service.areas().then(data => {
+                this.area = data[0][this.obj].carreras;
+                    
+         });
+
+ }
+
+
 
 }

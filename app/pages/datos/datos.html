@@ -50,31 +50,10 @@
 <ion-segment >
     <ion-label>Resultados Test</ion-label>
  </ion-segment>
-
-<ion-item>
+<ion-item *ngFor="let punto of puntos | orderBy : ['-puntos', 'nombre']" (click)="goCarreras(punto.obj)" >
   <ion-icon name="bookmark" item-left></ion-icon>
-  C. DE LA SALUD
-  <ion-badge item-right>{{datos.CS | round:2}}%</ion-badge>
-</ion-item>
-<ion-item>
-  <ion-icon name="bookmark" item-left></ion-icon>
-  C. SOCIALES Y HUMANIDADES
-  <ion-badge item-right>{{datos.CSH | round:2}}%</ion-badge>
-</ion-item>
-<ion-item>
-  <ion-icon name="bookmark" item-left></ion-icon>
-  C. ECONOMICAS ADMINISTRATIVAS
-  <ion-badge item-right>{{datos.CEA | round:2}}%</ion-badge>
-</ion-item>
-<ion-item>
-  <ion-icon name="bookmark" item-left></ion-icon>
-  C. BIOLOGICO-AGROPECUARIAS Y PESQUERAS
-  <ion-badge item-right>{{datos.CBAP | round:2}}%</ion-badge>
-</ion-item>
-<ion-item>
-  <ion-icon name="bookmark" item-left></ion-icon>
-  C. BASICAS E INGENIERIAS
-  <ion-badge item-right>{{datos.CBI | round:2}}%</ion-badge>
+   {{punto.nombre}} 
+  <ion-badge item-right>{{punto.puntos | round:0}}%</ion-badge>
 </ion-item>
 <br>
 <br>

@@ -2,13 +2,13 @@ import {Component} from "@angular/core";
 import {NavController, NavParams} from 'ionic-angular';
 import {UserPage} from '../user/user';
 import {QuizService, AuthService} from '../../services/authservice';
-import {RoundOfPipe} from '../../pipe/pipe';
+import {RoundOfPipe, OrderBy} from '../../pipe/pipe';
 
 
 @Component({
     templateUrl: 'build/pages/result/result.html',
     providers: [QuizService, AuthService],
-    pipes: [RoundOfPipe]
+    pipes: [RoundOfPipe, OrderBy]
 })
 export class Result {
   private service: any;
@@ -33,13 +33,31 @@ export class Result {
     this.CEA = (100 / 3) * this.result.a3;
     this.CBAP = (100 / 3) * this.result.a1;
     this.CBI = (100 / 3) * this.result.a2;
-    this.resul = {
-                    CS: this.CS,
-                    CSH: this.CSH,
-                    CEA: this.CEA,
-                    CBAP: this.CBAP,
-                    CBI: this.CBI, 
-        }
+
+
+                        this.resul = [
+
+                    {
+                        nombre: 'C. DE LA SALUD',
+                        puntos: this.CS,
+                    },
+                                        {
+                        nombre: 'C. SOCIALES Y HUMANIDADES',
+                        puntos: this.CSH,
+                    },
+                                        {
+                        nombre: 'C. ECONOMICAS ADMINISTRATIVAS',
+                        puntos: this.CEA,
+                    },
+                                        {
+                        nombre: 'C. BIOLOGICO-AGROPECUARIAS Y PESQUERAS',
+                        puntos: this.CBAP,
+                    },
+                                        {
+                        nombre: 'C. BASICAS E INGENIERIAS',
+                        puntos: this.CBI,
+                    }
+                ]
 
         console.log(this.resul)
 

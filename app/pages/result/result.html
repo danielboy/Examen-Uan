@@ -7,35 +7,11 @@
 
        <h4> El Porcentaje Obtenido Por Area  Es: </h4>
 <ion-card>
-    <ion-item-group>
-      <ion-item-divider light> C. DE LA SALUD
-        <ion-badge item-right>{{CS | round:2}}%</ion-badge>
+    <ion-item-group *ngFor="let punto of resul | orderBy : ['-puntos', 'nombre']">
+      <ion-item-divider light>{{punto.nombre}}
+        <ion-badge item-right>{{punto.puntos | round:0}}%</ion-badge>
       </ion-item-divider>
     </ion-item-group>
-
-    <ion-item-group>
-      <ion-item-divider light> C. SOCIALES Y HUMANIDADES
-        <ion-badge item-right>{{CSH | round:2}}%</ion-badge>
-      </ion-item-divider>
-    </ion-item-group>  
-
-    <ion-item-group>
-      <ion-item-divider light> C. ECONOMICAS ADMINISTRATIVAS
-        <ion-badge item-right>{{CEA | round:2}}%</ion-badge>
-      </ion-item-divider>
-    </ion-item-group>  
-
-    <ion-item-group>
-      <ion-item-divider light> C. BIOLOGICO-AGROPECUARIAS Y PESQUERAS
-        <ion-badge item-right>{{CBAP | round:2}}%</ion-badge>
-      </ion-item-divider>
-    </ion-item-group> 
-
-    <ion-item-group>
-      <ion-item-divider light>  C. BASICAS E INGENIERIAS
-        <ion-badge item-right>{{CBI | round:2}}%</ion-badge>
-      </ion-item-divider>
-    </ion-item-group>         
 </ion-card>
 
   <button full primary (click)="goUserPage()">Salir</button>

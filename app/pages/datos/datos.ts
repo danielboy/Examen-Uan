@@ -1,20 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {UserPage} from '../user/user';
-import {RoundOfPipe} from '../../pipe/pipe';
+import {CarrerasPage} from '../carreras/carreras';
+import {RoundOfPipe, OrderBy} from '../../pipe/pipe';
 
 
 @Component({
   templateUrl: 'build/pages/datos/datos.html',
   providers: [AuthService],
-  pipes: [RoundOfPipe]
+  pipes: [RoundOfPipe, OrderBy],
 })
 export class DatosPage {
 
     private service: any;
     datos: any;
-    resul: any;
+    areas: any;
+    puntos: any;
 
   constructor(private authservice: AuthService, private nav: NavController, private alertCtrl: AlertController) {
       
@@ -25,17 +27,9 @@ export class DatosPage {
                     matricula: '-',
                     escuela: '_',
                     turno: '_',
-                    grupo: '_',
-                    CS: '_',
-                    CSH: '_',
-                    CEA: '_',
-                    CBAP: '_',
-                    CBI: '_',                       
+                    grupo: '_',                       
 
                 }
-
-                
-
   }
 
 onPageLoaded() {
@@ -46,17 +40,44 @@ onPageLoaded() {
                     matricula: data.matricula,
                     escuela: data.escuela,
                     turno: data.turno,
-                    grupo: data.grupo,
-                    CS: data.CS,
-                    CSH: data.CSH,
-                    CEA: data.CEA,
-                    CBAP: data.CBAP,
-                    CBI: data.CBI, 
-                                     
+                    grupo: data.grupo,                    
                 }
-                console.log(this.datos.escuela)
-                console.log(this.datos)
+
+
+                this.puntos = [
+
+                    {
+                        nombre: 'C. DE LA SALUD',
+                        puntos: data.CS,
+                        obj: '0'
+                    },
+                                        {
+                        nombre: 'C. SOCIALES Y HUMANIDADES',
+                        puntos: data.CSH,
+                        obj: '1'
+                    },
+                                        {
+                        nombre: 'C. ECONOMICAS ADMINISTRATIVAS',
+                        puntos: data.CEA,
+                        obj: '2'
+                    },
+                                        {
+                        nombre: 'C. BIOLOGICO-AGROPECUARIAS Y PESQUERAS',
+                        puntos: data.CBAP,
+                        obj: '3'
+                    },
+                                        {
+                        nombre: 'C. BASICAS E INGENIERIAS',
+                        puntos: data.CBI,
+                        obj: '4'
+                    }
+                ]
+            
+                console.log(this.datos,' data')
         });
+
+
+
  }
  
 
@@ -65,5 +86,10 @@ goUserPage(){
 		this.nav.push(UserPage);
 	}
 
+goCarreras(obj){
+		this.nav.push(CarrerasPage, {obj: obj});
+	}    
+
 
 }
+
