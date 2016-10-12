@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {NavController, AlertController} from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {UserPage} from '../user/user';
-import {SignupPage} from '../signup/signup';
+
 
 @Component({
   templateUrl: 'build/pages/login/login.html',
@@ -39,7 +39,4 @@ export class LoginPage {
     });
 }
 
-      signup() {
-      this.nav.push(SignupPage);
-  }
 }

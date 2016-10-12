@@ -53,19 +53,6 @@ export class AuthService {
             });
         });
     }
-    adduser(user) {
-        let headers = new Headers();
-        headers.append('Content-Type','application/json');
-        return new Promise(resolve => {
-            this.http.post('http://localhost:3333/adduser', JSON.stringify(user), {headers: headers}).subscribe(data => {
-                if(data.json().success){
-                    resolve(true);
-                } else {
-                    resolve(false);
-                }
-            });
-        });
-    }
 
     isAuthenticated() {
       return this.isLoggedin;
