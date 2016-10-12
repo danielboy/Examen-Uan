@@ -5,8 +5,9 @@
 </ion-header>
 <ion-content class="result">
 
-       <h4> El Porcentaje Obtenido Por Area  Es: </h4>
+
 <ion-card>
+  <ion-card-header> Resultados Obtenido Por Area </ion-card-header>
     <ion-item-group *ngFor="let punto of resul | orderBy : ['-puntos', 'nombre']">
       <ion-item-divider light>{{punto.nombre}}
         <ion-badge item-right>{{punto.puntos | round:0}}%</ion-badge>

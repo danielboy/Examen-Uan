@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component} from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {UserPage} from '../user/user';
@@ -72,8 +72,7 @@ onPageLoaded() {
                         obj: '4'
                     }
                 ]
-            
-                console.log(this.datos,' data')
+        
         });
 
 

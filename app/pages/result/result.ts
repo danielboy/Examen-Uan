@@ -59,8 +59,6 @@ export class Result {
                     }
                 ]
 
-        console.log(this.resul)
-
   }
 
    onPageLoaded(resul) {

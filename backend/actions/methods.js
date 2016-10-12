@@ -10,14 +10,14 @@ var functions = {
 
   authenticate: function(req, res) {
     User.findOne({
-      name: req.body.name
+      matricula: req.body.matricula
     }, function(err, user){
       console.log(user);
       if (err) throw err;
       if(!user){
         return res.status(403).send({success: false, msg: 'Authenticaton failed, user not found.'});
       } else {
-        user.comparePassword(req.body.password, function(err, isMatch){
+        user.comparePassword(req.body.curp, function(err, isMatch){
           if(isMatch && !err) {
             var datos = {
   _id: user._id,

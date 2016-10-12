@@ -19,8 +19,6 @@ export class CarrerasPage {
   }
 
 onPageLoaded() {
-
-  console.log(this.obj)
             this.service.areas().then(data => {
                 this.area = data[0][this.obj].carreras;
                     

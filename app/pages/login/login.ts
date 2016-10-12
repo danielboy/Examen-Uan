@@ -16,8 +16,8 @@ export class LoginPage {
     private dusers: any;
     constructor(private authservice: AuthService, private navcontroller: NavController, private alertCtrl: AlertController) {
         this.usercreds = {
-            name: '',
-            password: ''
+            matricula: '',
+            curp: ''
         }
         this.service = authservice;
         this.nav = navcontroller;
