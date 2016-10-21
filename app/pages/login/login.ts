@@ -23,17 +23,22 @@ export class LoginPage {
         this.nav = navcontroller;
     }
     login(user) {
+
         this.service.authenticate(user).then(data => {
             if(data) {
                 this.nav.setRoot(UserPage);
+
+                return true;
             }
-            else  {
+             if(user == null) {
                 let alert = this.alertCtrl.create({
-                title: 'Error',
-                subTitle: 'Selecciona Tu Respuesta',
-                buttons: ['Ok']
+                  title: 'Datos Invalidos!',
+                  subTitle: 'Verifica tus Matricula o Curp!',
+                  buttons: ['OK']
                 });
-            alert.present();
+                alert.present();
+
+                return false;
             }
 
     });
