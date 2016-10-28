@@ -10,7 +10,7 @@
 
 <ion-content padding>
 <ion-list inset>
-  <ion-item *ngFor="let carrera of area">
+  <ion-item *ngFor="let carrera of carreras"(click)="goInfo_car(carrera._id)">
     {{carrera.nombre}}
   </ion-item>
 </ion-list>

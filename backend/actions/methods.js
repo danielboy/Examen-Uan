@@ -1,6 +1,7 @@
 var User = require('../models/user');
 var preguntas = require('../models/preguntas');
 var areas = require('../models/areas');
+var carreras = require('../models/carreras');
 var jwt  = require('jwt-simple');
 var config = require('../config/database');
 
@@ -144,7 +145,7 @@ var functions = {
       });
       },
 
-     // Consulta Preguntas
+     // Consulta areas
       areas: function(req, res){
       areas.find({}, function(err, areas) {
                 if (err){
@@ -156,6 +157,21 @@ var functions = {
                   res.json({success:true, msg:'HOla', areas});
                 }
         console.log(areas);
+      });
+      },
+
+           // Consulta carreras
+      carreras: function(req, res){
+      carreras.find({}, function(err, carreras) {
+                if (err){
+                  console.log(err);
+                  res.json({success:false, msg:'Hola no sirve'})
+                }
+
+                else {
+                  res.json({success:true, msg:'HOla', carreras});
+                }
+        console.log(carreras);
       });
       }
 

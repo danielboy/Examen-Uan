@@ -91,7 +91,24 @@ export class AuthService {
                      console.log(data)
              });
         })
-    }    
+    } 
+
+   carreras() {
+        return new Promise(resolve => {
+            let headers = new Headers();
+             this.http.get('http://localhost:3333/carreras/', {headers: headers}).subscribe(data => {
+                this.data = data;
+                 if(data.json().carreras){
+
+                     resolve(data.json().carreras);
+                 }
+                 else
+                     resolve(false);
+
+                     console.log(data)
+             });
+        })
+    }        
 
    putinfo(resul) {
         return new Promise(resolve => {

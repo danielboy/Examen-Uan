@@ -9,6 +9,7 @@ router.get('/getinfo', actions.getinfo);
 router.put('/putinfo', actions.putinfo);
 router.get('/preguntas', actions.preguntas);
 router.get('/areas', actions.areas);
+router.get('/carreras', actions.carreras);
 //router.get('/gettest', actions.gettest);
 
 module.exports=router;

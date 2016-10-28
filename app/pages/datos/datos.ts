@@ -49,27 +49,27 @@ onPageLoaded() {
                     {
                         nombre: 'C. DE LA SALUD',
                         puntos: data.CS,
-                        obj: '0'
+                        clave: 'CS'
                     },
                                         {
                         nombre: 'C. SOCIALES Y HUMANIDADES',
                         puntos: data.CSH,
-                        obj: '1'
+                        clave: 'CSH'
                     },
                                         {
                         nombre: 'C. ECONOMICAS ADMINISTRATIVAS',
                         puntos: data.CEA,
-                        obj: '2'
+                        clave: 'CEA'
                     },
                                         {
                         nombre: 'C. BIOLOGICO-AGROPECUARIAS Y PESQUERAS',
                         puntos: data.CBAP,
-                        obj: '3'
+                        clave: 'CBAP'
                     },
                                         {
                         nombre: 'C. BASICAS E INGENIERIAS',
                         puntos: data.CBI,
-                        obj: '4'
+                        clave: 'CBI'
                     }
                 ]
         
@@ -85,8 +85,8 @@ goUserPage(){
 		this.nav.push(UserPage);
 	}
 
-goCarreras(obj){
-		this.nav.push(CarrerasPage, {obj: obj});
+goCarreras(clave){
+		this.nav.push(CarrerasPage, {clave: clave});
 	}    
 
 
