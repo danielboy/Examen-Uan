@@ -10,6 +10,7 @@ import {AuthService} from '../../services/authservice';
 */
 @Component({
   templateUrl: 'build/pages/inf-car/inf-car.html',
+  providers: [AuthService],
 })
 export class InfCarPage {
 
@@ -23,6 +24,15 @@ export class InfCarPage {
       this.service = authservice;
  console.log(this.clave);
 
+        this.carrera = {
+
+            nombre: '',
+            estudiar: '',
+            saber: '',
+            ejercer: '',
+        }
+
+
   }
 
     onPageLoaded() {
@@ -34,7 +44,7 @@ export class InfCarPage {
 
                     if(obj._id == this.clave){
                      
-                        this.carrera 
+                        this.carrera = obj;
                    
                   } 
 

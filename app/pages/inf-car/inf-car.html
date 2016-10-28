@@ -6,13 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>inf_car</ion-title>
+  <ion-navbar primary>
+    <ion-title>Perfil de la carrera</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<ion-card>
+  <ion-card-content>
+    <h2 text-center>
+¿Porque estudiar {{carrera.nombre}} en la Universidad Autnoma de Nayarit?
+    </h2>
+  <p text-justify>{{carrera.estudiar}}</p>
+    <h2 text-center>
+¿Que voy a saber si estudio {{carrera.nombre}} ?
+    </h2>
+  <p text-justify>{{carrera.saber}}</p>
+      <h2 text-center>
+¿Dónde puedo ejercer mi profesión?
+    </h2>
+  <p text-justify>{{carrera.ejercer}}</p>
 
+  </ion-card-content>
+</ion-card>
 </ion-content>
