@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var bcrypt = require('bcrypt');
 var UserSchema = new Schema({
   name: {
     type: String,
@@ -66,13 +65,11 @@ var UserSchema = new Schema({
 
 
 UserSchema.methods.comparePassword = function (passw, cb) {
-  bcrypt.compare(passw, this.curp, function (err, isMatch) {
-    if (err) {
-      return cb(err);
+    if (passw == this.curp) {
+      return cb(null, true);
+    } else {
+      return cb("contraseña incorrecta");
     }
-    console.log(isMatch)
-    cb(null, isMatch);
-  });
 };
 
 module.exports = mongoose.model('User', UserSchema);

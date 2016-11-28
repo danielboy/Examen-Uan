@@ -25,6 +25,7 @@ var functions = {
   name: user.name,
   apellidos: user.apellidos,
   matricula: user.matricula,
+  curp: user.curp,
             }
             var token = jwt.encode(datos, config.secret);
             res.json({success: true, token: token});
