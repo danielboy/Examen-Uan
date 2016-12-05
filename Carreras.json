@@ -1,0 +1,266 @@
+{
+	"_id" : ObjectId("57e94e478709561fe849a552"),
+	"clave_area" : "CS",
+	"estudiar" : "Cuidado de Enfermería: mediante esta competencia podrás proporcionar cuidado integral de enfermería al individuo, familia y comunidad, en las diferentes etapas de la vida, congruentes al perfil epidemiológico, y fomentar el autocuidado para la salud con base en los principios científicos, filosóficos, éticos y humanísticos en los diferentes ámbitos de tu desempeño profesional.",
+	"img" : "Lic_Emfermeria",
+	"nombre" : "Licenciatura en Enfermería"
+},
+{
+	"_id" : ObjectId("57e94e5c8709561fe849a554"),
+	"clave_area" : "CS",
+	"estudiar" : "El programa educativo de Médico Cirujano contempla 6 años de la carrera: los 4° primeros contemplan actividades teórico prácticas en las áreas básicas y clínicas, el 5° año es cursado en un hospital de segundo nivel de atención del sector salud, rotando por medicina familiar, ginecoobstretricia, pediatría y de adultos. Los 6 años de servicio social, se realiza en una unidad médica del primer nivel de atención del sector salud, o en centro de investigación clínica bajo el cargo de un tutor investigador.",
+	"img" : "Lic_Medico_Cirujano",
+	"nombre" : "Médico Cirujano"
+},
+{
+	"_id" : ObjectId("57e94e848709561fe849a558"),
+	"clave_area" : "CS",
+	"estudiar" : "La Universidad Autónoma de Nayarit es la única institución de nivel superior en el estado que cuenta con el programa educativo de la Licenciatura en Químico Farmacobiólogo con 23 años de antigüedad. Tiene cuatro salidas terminales: Bioquímica Clínica, Química Forense, Ciencia y Tecnología de Alimentos y Farmacia. Además que con una planta docente de calidad, con profesores que cuentan con distinciones de calidad (SNI y PRODEP).",
+	"img" : "Lic_Quimico_Farmacobiologo",
+	"nombre" : "Químico Farmacobiólogo"
+},
+{
+	"_id" : ObjectId("57e94e8f8709561fe849a55a"),
+	"clave_area" : "CS",
+	"estudiar" : "El Licenciado en Cultura Física y Deportes egresado de la Universidad Autónoma de Nayarit, será capaz de: Proponer, elaborar y dirigir programas de activación física que ayuden a prevenir, enfermedades relacionadas con problemas de la obesidad, diabetes, cardiovasculares y, crónico degenerativas. Prevenir, atender y tratar lesiones deportivas.",
+	"img" : "Lic_Cultura_Fisica_Deportes",
+	"nombre" : "Licenciatura en Cultura Física y Deporte"
+},
+{
+	"_id" : ObjectId("57e94e978709561fe849a55c"),
+	"clave_area" : "CS",
+	"estudiar" : "El egresado será capaz de desarrollar las competencias profesionales requeridas para intervenir en el campo ocupacional de su área, cubriendo las necesidades de la sociedad en beneficio de los mismos, al tener los conocimientos, habilidades y valores para participar a través:",
+	"img" : "Lic_Nutricion",
+	"nombre" : "Licenciatura en Nutrición"
+},
+{
+	"_id" : ObjectId("57e94ffc87095609a4eed29c"),
+	"clave_area" : "CS",
+	"estudiar" : "Competencias Profesionales Integradas que debe desarrollar el egresado de la Licenciatura de Cirujano Dentista: Diagnosticar y resolver problemas de salud-enfermedad de tipo estomatológico utilizando los conocimientos y habilidades adquiridas, teniendo la capacidad de canalizar al paciente a las especialidades correspondientes en casos complejos, con un alto compromiso social y ético apegándose a los principios axiológicos y normas oficiales de la profesión.",
+	"img" : "Lic_Cirujano_Dentista",
+	"nombre" : "Cirujano Dentista"
+},
+{
+	"_id" : ObjectId("57e9515487095609a4eed2ac"),
+	"clave_area" : "CSH",
+	"estudiar" : "El Programa Académico de Comunicación y Medios cuenta con infraestructura adecuada en que la que se encuentran los laboratorios de Televisión, Edición, Fotografía, Radio y Documental. El Programa Académico es uno de las pioneras en incidir y fortalecer el campo de la comunicación y los medios en el Estado,",
+	"img" : "Lic_Comunicacion_Medios",
+	"nombre" : "Licenciatura en Comunicación y Medios"
+},
+{
+	"_id" : ObjectId("57e951e287095609a4eed2b7"),
+	"clave_area" : "CSH",
+	"estudiar" : "La Ciencia Política estudia principalmente las relaciones de poder entre los diferentes tipos de gobiernos y regímenes en una sociedad determinada, siendo algo de lo que nadie puede ser excluido al vivir en sociedad, entendiendo la política como la búsqueda del bien común, es decir, el bienestar mayor para los más posibles. La licenciatura en Ciencia Política se oferta en esta Universidad pública con los más altos estándares de nivel educativo en el Estado.",
+	"img" : "Lic_Ciencia_Politica",
+	"nombre" : "Licenciatura en Ciencia Política"
+},
+{
+	"_id" : ObjectId("57e951f287095609a4eed2b9"),
+	"clave_area" : "CSH",
+	"estudiar" : "El Licenciado en Derecho egresado de la Universidad Autónoma de Nayarit deberá tener los conocimientos básicos de las Ciencias Sociales y Humanidades que le permitan comprender el derecho y su trascendencia social, así como del ejercicio de la profesión jurídica. Deberá contar con las herramientas adecuadas que le permitan expresarse correctamente en forma oral y escrita, empleando un pensamiento lógico y un razonamiento jurídico que le facilite una argumentación eficaz.",
+	"img" : "Lic_Derecho",
+	"nombre" : "Licenciatura en Derecho"
+},
+{
+	"_id" : ObjectId("57e951fc87095609a4eed2bb"),
+	"clave_area" : "CSH",
+	"estudiar" : "En la educación inicial y preescolar en México se han realizado reformas educativas implementadas en los nuevos planes y programas de estudio, actualmente se trabaja en este nivel educativo con el programa de Modelo de Atención con Enfoque Integral, siendo los Centros de Desarrollo Infantil (CENDI) las instituciones enfocadas al cuidado y atención de niños menores de 6 años. Esta institución es un espacio útil para apoyar a las madres que trabajan o desean trabajar",
+	"img" : "Lic_Educacion_Infantil",
+	"nombre" : "Licenciatura en Educación Infantil"
+},
+{
+	"_id" : ObjectId("57e9520787095609a4eed2bd"),
+	"clave_area" : "CSH",
+	"estudiar" : "¿Has escuchado hablar de la madre de todas las ciencias?, ¿sabes qué es eso del “amor a la sabiduría”?, ¿has reflexionado alguna vez sobre el sentido de la vida o si hay algo después de la muerte, sobre por qué utilizamos el lenguaje tal como lo usamos, si lo que dice la ciencia es verdadero, sobre lo bueno y lo malo, sobre qué es la mente, la belleza, y qué significa ser libre?... ¿incluso, has cuestionado las ideologías y las costumbres establecidas, la autoridad, el gobierno y la existencia de Dios?..",
+	"img" : "Lic_Filosofia",
+	"nombre" : "Licenciatura en Filosofía"
+},
+{
+	"_id" : ObjectId("57e9521087095609a4eed2bf"),
+	"clave_area" : "CSH",
+	"estudiar" : "· Facilitar el proceso grupal en las áreas laboral, social, educativa y clínica haciendo uso del conocimiento científico.Detectar, diseñar, asesorar e implementar estrategias tendientes a la prevención de alteraciones en la salud mental y el bienestar psicológico de los individuos y sus grupos de referencia tales como familia, escuela, trabajo y sociedad.",
+	"img" : "Lic_Psicologia",
+	"nombre" : "Licenciatura en Psicología"
+},
+{
+	"_id" : ObjectId("57e9521887095609a4eed2c1"),
+	"clave_area" : "CSH",
+	"estudiar" : "El objetivo del programa consiste en la formación de profesionistas en lingüística aplicada con competencias básicas para analizar de manera científica la naturaleza, estructura y uso del lenguaje, así como los procesos de adquisición de una segunda lengua y su relación con el proceso de enseñanza-aprendizaje. Lo anterior con el propósito de propiciar e impulsar la profesionalización e investigación en los diferentes campos de la disciplina, desde una perspectiva social, humanista e intercultural.",
+	"img" : "Lic_Linguistica_Aplicada",
+	"nombre" : "Licenciatura en Lingüística Aplicada"
+},
+{
+	"_id" : ObjectId("57e9522187095609a4eed2c3"),
+	"clave_area" : "CSH",
+	"estudiar" : "La importancia de estudiar en este programa académico se deriva de las relaciones comerciales, culturales, históricas y económicas que se han generado actualmente entre los países México y Corea, puesto que en la actualidad Corea es considerado como uno de los países con mayor desarrollo electrónico y académico, posesionándose a nivel mundial como uno de los países con mayor ingreso económico debido, a su gran ingenio para desarrollar e innovar en cuestiones de tecnología",
+	"img" : "Lic_Estudios_Coreanos",
+	"nombre" : "Licenciatura en Estudios Coreanos"
+},
+{
+	"_id" : ObjectId("57e9532c87095616c41450a1"),
+	"clave_area" : "CEA",
+	"estudiar" : "El egresado de la Licenciatura en Administración al término de su formación, será capaz de desarrollar su práctica profesional y personal a partir de la descripción realizada: Aplicar el proceso administrativo que permita eficientar el funcionamiento organizacional para el logro de los objetivos, optimizando sus recursos desde una visión ecológica y cuidado del medio ambiente, con compromiso ético y calidad humana.",
+	"img" : "Lic_Administracion",
+	"nombre" : "Licenciatura en Administración"
+},
+{
+	"_id" : ObjectId("57e9533687095616c41450a3"),
+	"clave_area" : "CEA",
+	"estudiar" : "Diseñar, implementar, mejorar, operar y evaluar sistemas y procedimientos de información financiera de las organizaciones para la toma de decisiones contables y fiscales, que le permita atender las necesidades y requerimientos de las organizaciones, actuando con un alto sentido ético y de responsabilidad social.",
+	"img" : "Lic_Contaduria",
+	"nombre" : "Licenciatura en Contaduría"
+},
+{
+	"_id" : ObjectId("57e9534587095616c41450a5"),
+	"clave_area" : "CEA",
+	"estudiar" : "Te has preguntado ¿cómo se distribuyen los recursos económicos?, ¿cómo funciona la Banca mexicana, los seguros de vida, de autos, el mercado de valores, el precio del petróleo, las remesas de los mexicanos que envían de Estados Unidos, el aumento del dólar y por qué afecta tu economía?, además, ¿cómo se analizan las fortalezas y debilidades de la economía de tu localidad? o ¿cómo implementar proyectos de inversión para fortalecer o incrementar el comercio de un estado o país? Pues bien",
+	"img" : "Lic_Economia",
+	"nombre" : "Licenciatura en Economía"
+},
+{
+	"_id" : ObjectId("57e9535387095616c41450a7"),
+	"clave_area" : "CEA",
+	"estudiar" : "Cuando seas un Licenciado en Informática podrás: Diseñar, planificar, identificar, reestructurar procesos, administrar la información con los medios necesarios, podrás recopilar y organizar datos, información y procesos necesarios para el funcionamiento óptimo de la organización a través del diseño, analisis, creación y administración de base de datos locales o distribuidas en la nube.",
+	"img" : "Lic_Informatica",
+	"nombre" : "Licenciatura en Informática"
+},
+{
+	"_id" : ObjectId("57e9535f87095616c41450a9"),
+	"clave_area" : "CEA",
+	"estudiar" : "El licenciado en Mercadotecnia contará con competencias profesionales integradas que le permitirán desarrollarse en diversas áreas de la mercadotecnia, tanto en el ámbito estatal, nacional e internacional. Las características de formación del licenciado en mercadotecnia son: Gestionar información en los mercados locales, nacionales e internacionales respecto a lo que acontece en materia de mercadotecnia.",
+	"img" : "Lic_Mercadotecnia",
+	"nombre" : "Licenciatura en Mercadotecnia"
+},
+{
+	"_id" : ObjectId("57e9536a87095616c41450ab"),
+	"clave_area" : "CEA",
+	"estudiar" : "· Conocer, identificar e implementar sistemas de redes, basados en el conocimiento de los principales estándares de aplicación, desarrollando habilidades para realizar proyectos de operación y administración de redes en las empresas y organizaciones públicas y privadas; actuando con un sentido de respeto a la confidencialidad a los estándares y normas oficiales de aplicación.",
+	"img" : "Lic_Sistemas_Computacionales",
+	"nombre" : "Licenciatura en Sistemas Computacionales"
+},
+{
+	"_id" : ObjectId("57e9537687095616c41450ad"),
+	"clave_area" : "CEA",
+	"estudiar" : "Los licenciados en Turismo egresados de esta escuela son capaces de realizar investigación científica del turismo para el ciclo de vida del mismo, para generar planes, programas, proyectos y gestión de empresas turísticas no solo en la parte administrativa y gerencial, sino que también en la parte operativa. Podrá generar nuevos productos que sean innovadores,",
+	"img" : "Lic_Turismo",
+	"nombre" : "Licenciatura en Turismo"
+},
+{
+	"_id" : ObjectId("57e9538187095616c41450af"),
+	"clave_area" : "CEA",
+	"estudiar" : "El programa educativo de Innovación y Gestión Turística ha sido diseñado de acuerdo a las necesidades actuales del dinámico sector turístico, por ello, los estudiantes de esta licenciatura desarrollan las competencias necesarias para integrarse de manera proactiva al desarrollo de esta importante actividad económica, proponiendo innovaciones en la prestación de los servicios turísticos que hagan más competitivas a las organizaciones relacionadas con el turismo y que permitan diversificar la oferta turística.",
+	"img" : "Lic_Innovacion_Gestion_Turistica",
+	"nombre" : "Licenciatura en Innovación y Gestión Turística"
+},
+{
+	"_id" : ObjectId("57e9538a87095616c41450b1"),
+	"clave_area" : "CEA",
+	"estudiar" : "Los egresados de la Licenciados en Gastronomía, podrán comprender la composición química de los alimentos, valor nutricional y manejo higiénico de estos; también podrán diseñar y evaluar procesos de la industria de alimentos y bebidas aplicando las técnicas culinarias correctas. Además generar nuevos e innovadores productos, con base en estándares de calidad",
+	"img" : "Lic_Gastronomia",
+	"nombre" : "Licenciatura en Gastronomía"
+},
+{
+	"_id" : ObjectId("57e9539187095616c41450b3"),
+	"clave_area" : "CEA",
+	"estudiar" : "La Licenciatura en Gestión Empresarial en modalidad virtual, es una nueva opción de formación en la Universidad Autónoma de Nayarit y la primera que se oferta bajo las características de la modalidad no escolarizada. Para su diseño se analizó la problemática social de referencia, la situación del mercado de trabajo y de la oferta educativa en la región, sustentado en un estudio de pertinencia.",
+	"img" : "Lic_Gestion_Empresarial",
+	"nombre" : "Licenciatura en Gestión Empresarial en línea"
+},
+{
+	"_id" : ObjectId("57e9526487095609a4eed2c5"),
+	"clave_area" : "CSH",
+	"estudiar" : "EL programa académico de Licenciado Ciencias de la Educación es un programa Acreditado. Sólo 25% de las personas que estudian educación o pedagogía en el país lo hacen en un programa de Calidad Reconocida con una Acreditación. Este es un programa Acreditado como Programa de Calidad Nacional desde 2010, refrendando en 2015. Además de las instituciones que ofrecen la carrera en Nayarit, es la que tiene la mejor combinación de Profesores",
+	"img" : "Lic_Ciencias_Educacion",
+	"nombre" : "Licenciatura en Ciencias de la Educación"
+},
+{
+	"_id" : ObjectId("57e9539a87095616c41450b5"),
+	"clave_area" : "CEA",
+	"estudiar" : "El perfil profesional del egresado será capaz de: Detectar, analizar y aprovechar las áreas de oportunidad de negocio entre empresas locales, nacionales e internacionales, aplicando el marco regulatorio jurídico de los negocios, estableciendo un compromiso de identidad, con respeto y ética profesional",
+	"img" : "Lic_Negocios_internacionales",
+	"nombre" : "Licenciatura en Negocios Internacionales"
+},
+{
+	"_id" : ObjectId("57e953ae87095616c41450b7"),
+	"clave_area" : "CBAP",
+	"estudiar" : "México es una nación desde muchos puntos de vista diversa. Posee, entre otras características, una gran gama de ambientes, en los cuales se han desarrollado de igual forma una amplia variedad de especies biológicas, por lo que se considera megadiverso. Nayarit, en ese sentido, en cierta medida presenta una situación muy parecida a la del país",
+	"img" : "Lic_Biologia",
+	"nombre" : "Licenciatura en Biología"
+},
+{
+	"_id" : ObjectId("57e953b687095616c41450b9"),
+	"clave_area" : "CBAP",
+	"estudiar" : "La pesca y la acuacultura, constituyen una fuente vital de alimentos, empleo, recreación, comercio y bienestar económico en todas las poblaciones del mundo, tanto para las generaciones presentes como para las futuras. ",
+	"img" : "Ing_Pesquera",
+	"nombre" : "Ingeniería Pesquera"
+},
+{
+	"_id" : ObjectId("57e953c187095616c41450bb"),
+	"clave_area" : "CBAP",
+	"estudiar" : " composición,  estructura, función, origen,  aplicando métodos de investigación, técnicas y estrategias de manejo en maquinaria y equipos para el buen desarrollo de la producción agrícola así mismo como el  análisis de información, con plena conciencia de cómo se construye el conocimiento agronómico. Generar conocimiento acerca de la agricultura,  con base en los saberes sobre ",
+	"img" : "Ing_Agronomo",
+	"nombre" : "Ingeniero Agrónomo"
+},
+{
+	"_id" : ObjectId("57e953c987095616c41450bd"),
+	"clave_area" : "CBAP",
+	"estudiar" : "El programa educativo de Medicina Veterinaria y Zootecnia-UAN-2014 es escolarizado, flexible, por competencias, basado en el sistema de créditos, con posibilidad de cursar unidades de aprendizaje en otras instituciones y cursar optativas para el mejor desarrollo profesional. Además cuentas con 10 años máximo para terminar tu carrera.",
+	"img" : "Lic_Medicina_Veterinaria_Zootecnia",
+	"nombre" : "Medicina Veterinaria y Zootecnia"
+},
+{
+	"_id" : ObjectId("57e953d587095616c41450bf"),
+	"clave_area" : "CBAP",
+	"estudiar" : "El Ingeniero en Acuicultura de la Universidad Autónoma de Nayarit, es un profesional que a través de la aplicación de las bases científicas y tecnológicas de la producción de especies acuáticas dará respuesta al desarrollo de la acuicultura de manera sustentable, con un enfoque interdisciplinario en el contexto del análisis de sistemas, como parte de una estrategia de aprovechamiento y preservación de los recursos naturales (especies marinas y dulceacuícolas de importancia comercial y en peligro de extinción).",
+	"img" : "Ing_Acuiculturag",
+	"nombre" : "Ingeniería en Acuicultura"
+},
+{
+	"_id" : ObjectId("57e953e687095616c41450c1"),
+	"clave_area" : "CBI",
+	"estudiar" : "Los egresados de Ingeniería en Control y Computación son capaces de diseñar, innovar, aplicar, proyectar y mantener equipos, dispositivos, sistemas y redes industriales y de control automático, utilizando paralelamente el análisis, diseño y desarrollo de software para crear y optimizar los sistemas de control, automatización y software de aplicación específica; así como de la organización y aplicación de interfaces y redes industriales;",
+	"img" : "Ing_Control_Computacion",
+	"nombre" : "Ingeniería en Control y Computación"
+},
+{
+	"_id" : ObjectId("57e953ef87095616c41450c3"),
+	"clave_area" : "CBI",
+	"estudiar" : "La Universidad Autónoma de Nayarit tiene el propósito de formar Ingenieros en Electrónica capaces de diseñar, implementar y operar dispositivos y sistemas electrónicos en las áreas de las telecomunicaciones, electrónica industrial y la electrónica digital; apoyándose en el método científico y en los conocimientos de las ciencias básicas, apegándose a las prácticas de ingeniería y la normatividad aplicable",
+	"img" : "Ing_Electronica",
+	"nombre" : "Ingeniería en Electrónica"
+},
+{
+	"_id" : ObjectId("57e953f787095616c41450c5"),
+	"clave_area" : "CBI",
+	"estudiar" : "Los ingenieros mecánicos son profesionales altamente capacitados para desarrollar y aplicar nuevas tecnologías, para planear y poner en operación sistemas mecánicos-eléctricos, aplicándolos a los distintos tipos de industria: de la transformación metal, mecánica, automotriz, de servicios, transporte y comunicaciones, y extractiva minera, petrolera o siderúrgica, para elevar la productividad y competitividad de las empresas, y el bienestar de la sociedad.",
+	"img" : "Ing_Mecanica",
+	"nombre" : "Ingeniería Mecánica"
+},
+{
+	"_id" : ObjectId("57e953ff87095616c41450c7"),
+	"clave_area" : "CBI",
+	"estudiar" : "Los egresados del Programa Académico de Ingeniería Química tienen: Una formación profesional con un alto nivel de preparación, acorde con los retos que se presentan en la sociedad. E stán preparados para responder a las condiciones cambiantes de la industria química y de la transformación en el país. T ienen alto sentido de responsabilidad profesional y social",
+	"img" : "Ing_Quimica",
+	"nombre" : "Ingeniería Química"
+},
+{
+	"_id" : ObjectId("57e9540887095616c41450c9"),
+	"clave_area" : "CBI",
+	"estudiar" : "El Plan de Estudios de La Licenciatura en Matemáticas consta de un total de 385 créditos, esto después del rediseño y actualización que se realizó en el año 2013, fortaleciendo una sólida formación en las áreas básicas de las matemáticas como son: Álgebra, Geometría y topología, Análisis Matemático, Matemática Educativa, Modelación, Probabilidad y Estadística; lo anterior surgió para dar respuesta a las nuevas necesidades y dinámicas de la sociedad,",
+	"img" : "Lic_Matematicas ",
+	"nombre" : "Licenciatura en Matemática"
+},
+{
+	"_id" : ObjectId("584596b0f5a5d91f8caf1083"),
+	"clave_area" : "CS",
+	"estudiar" : "El programa de Profesional Asociado en Terapia Física es un gran impulsor tanto para dar atención a la enorme demanda de personas que requieren de terapia física, como para ampliar las posibilidades e intereses preparación profesional de las personas por las áreas de la salud.",
+	"img" : "Prof_Asociado_Terapia_Fisica",
+	"nombre" : "Profesional Asociado en Terapia Física"
+},
+{
+	"_id" : ObjectId("5845a648f5a5d91f8caf10a5"),
+	"clave_area" : "CEA",
+	"estudiar" : "La Universidad Autónoma de Nayarit ha trabajado desde 1987, la animación desde una perspectiva profesional. Debido a la necesidad de profesionalizar esta actividad enfocada a generar la integración de grupos de personas y dar valor a los entornos naturales y sociales a través de actividades lúdicas (juegos) y educativos.",
+	"img" : "Prof_Asociado_Animacion_Turistica_Socialcultural",
+	"nombre" : "Profesional Asociado En Animación Turística Y Sociocultural "
+},

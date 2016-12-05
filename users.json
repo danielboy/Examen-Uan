@@ -1,0 +1,15 @@
+{
+	"_id" : ObjectId("57fd950991f4bb264877f78c"),
+	"apellidos" : "Casillas Jimenez",
+	"CBAP" : "40",
+	"CBI" : "30",
+	"CEA" : "70",
+	"CS" : "60",
+	"CSH" : "80",
+	"curp" : "CADJ",
+	"escuela" : "Preparatoria # 1",
+	"grupo" : "2°C",
+	"matricula" : "05102734B",
+	"name" : "Daniel",
+	"turno" : "Matutino"
+},
