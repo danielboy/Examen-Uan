@@ -50,7 +50,7 @@
 <ion-segment >
     <ion-label>Resultados Test</ion-label>
  </ion-segment>
-<ion-item *ngFor="let punto of puntos" (click)="goCarreras(punto.clave)" >
+<ion-item *ngFor="let punto of puntos | orderBy : ['-puntos', 'nombre']" (click)="goCarreras(punto.clave)" >
   <ion-icon name="bookmark" item-left></ion-icon>
    {{punto.nombre}} 
   <ion-badge item-right>{{punto.puntos | round:0}}%</ion-badge>

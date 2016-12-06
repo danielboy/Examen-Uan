@@ -110,6 +110,23 @@ export class AuthService {
         })
     }        
 
+   preguntas() {
+        return new Promise(resolve => {
+            let headers = new Headers();
+             this.http.get('http://localhost:3333/preguntas/', {headers: headers}).subscribe(data => {
+                this.data = data;
+                 if(data.json().preguntas){
+
+                     resolve(data.json().preguntas);
+                 }
+                 else
+                     resolve(false);
+
+                     console.log(data)
+             });
+        })
+    } 
+
    putinfo(resul) {
         return new Promise(resolve => {
             console.log(resul)
