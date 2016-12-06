@@ -62,7 +62,7 @@ export class Result {
   }
 
    onPageLoaded(resul) {
-    this.service.putinfo(this.resul).subscribe(
+    this.service.putinfo({CS:this.CS, CSH:this.CSH, CEA:this.CEA, CBAP:this.CBI, CBI:this.CBI}).subscribe(
        data => {
 
        });

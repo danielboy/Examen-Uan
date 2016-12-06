@@ -144,7 +144,7 @@ export class QuizService {
                     QuiestionNo: 1,
                     Area: 1,
                     questionTitle: "",
-                    Question: "¿Te gusta Solventar problemas contables y financieros, controlar presupuestos y contabilidad?",
+                    Question: "Me gustaría o interesaría Conocer, colaborar y apoyar en la problemática social de las personas.",
                     correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -156,7 +156,7 @@ export class QuizService {
                     QuiestionNo: 2,
                     Area: 1,
                     questionTitle: "",
-                    Question: "¿Te Gusta Trabajar en un banco o caja postal?",
+                    Question: "Me gustaría o interesaría Contribuir a la solución de los problemas relacionados con la automatización de procesos industriales.",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -169,7 +169,7 @@ export class QuizService {
                     QuiestionNo: 3,
                     Area: 1,
                     questionTitle: "",
-                    Question: "¿Te Gusta Realizar programas de gestión empresarial?",
+                    Question: "Me gustaría o interesaría Manejar información esencial del funcionamiento y estado financiero de una empresa o institución.",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -181,7 +181,7 @@ export class QuizService {
                     QuiestionNo: 4,
                     Area: 2,
                     questionTitle: "",
-                    Question: "¿Te Gusta Trabajar ordenando, clasificando y archivando documentos?",
+                    Question: "Me gustaría o interesaría Participar en actividades que involucren la investigación de fenómenos físicos, químicos y biológicos.",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -193,7 +193,7 @@ export class QuizService {
                     QuiestionNo: 5,
                     Area: 2,
                     questionTitle: "",
-                    Question: "¿Te Gustaria Trabajar como auditor?",
+                    Question: "Me gustaría o interesaría Asistir a exposiciones donde se muestren avances tecnológicos que apoyen el área de la salud.",
                     correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -205,7 +205,7 @@ export class QuizService {
                     QuiestionNo: 6,
                     Area: 2,
                     questionTitle: "",
-                    Question: "¿Te Gustaria Organizar y controlar la recepción, almacenamiento y expedición de mercancías, anotando las entradas y las salidas?",
+                    Question: "Me gustaría o interesaría Coleccionar revistas que traten asuntos de mecánica o de armar cosas.",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -218,7 +218,7 @@ export class QuizService {
                     QuiestionNo: 7,
                     Area: 3,
                     questionTitle: "",
-                    Question: "¿Te Gustaria Trabajar de publicista?",
+                    Question: "Me gustaría o interesaría Participar en movimientos sociales a favor de los derechos y obligaciones de las personas.",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -230,7 +230,7 @@ export class QuizService {
                     QuiestionNo: 8,
                     Area: 3,
                     questionTitle: "",
-                    Question: "¿Te Gustaria Ejercer como profesor de deporte?",
+                    Question: "Me gustaría o interesaría Armar y desarmar aparatos eléctricos y electrónicos para conocer las partes que lo componen y su funcionamiento",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
@@ -242,7 +242,7 @@ export class QuizService {
                     QuiestionNo: 9,
                     Area: 3,
                     questionTitle: "",
-                    Question: "¿Te Gustaria Elaborar programas para ordenador. Aplicar la informática para analizar necesidades y problemas?",
+                    Question: "Me gustaría o interesaría Generar información contable y financiera para todos los agentes económicos interesados (clientes, inversores, proveedores, etc.).",
                       correctAns: 0,
                     options: [
                         {option:"Si", ansValue: true, marks: 1},
