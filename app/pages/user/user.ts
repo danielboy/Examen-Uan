@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {HomePage} from '../home/home';
+import {LoginPage} from '../login/login';
 import {StartTest} from '../startTest/startTest';
 import {DatosPage} from '../Datos/Datos';
 
@@ -19,12 +20,12 @@ export class UserPage {
         this.nav = navcontroller;
     }
     gostart(){
-        this.nav.push(StartTest, 0);
+        this.nav.push(StartTest);
         	}    
     
     logout() {
         this.service.logout();
-        this.nav.setRoot(HomePage);
+        this.nav.setRoot(LoginPage);
     }
     
     perfil() {

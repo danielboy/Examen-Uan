@@ -3,6 +3,7 @@
     "id": 1,
     "Reactivo": "Me gustaría o interesaría Conocer, colaborar y apoyar en la problemática social de las personas.",
     "area": "CSH",
+    "res_correcta": 0,
     "respuestas" : [  
               { "respuesta" : "Si", "val_respuesta" : true,  "valor" : 1  },
               { "respuesta" : "NO",  "val_respuesta" : false,"valor" : 0  }  
@@ -13,6 +14,7 @@
   {
     "id": 2,
     "Reactivo": "Me gustaría o interesaría Contribuir a la solución de los problemas relacionados con la automatización de procesos industriales.",
+    "res_correcta": 0,
     "area": "CBI",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -20,6 +22,7 @@
   {
     "id": 3,
     "Reactivo": "Me gustaría o interesaría Manejar información esencial del funcionamiento y estado financiero de una empresa o institución.",
+    "res_correcta": 0,
     "area": "CEA",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -27,6 +30,7 @@
   {
     "id": 4,
     "Reactivo": "Me gustaría o interesaría Participar en actividades que involucren la investigación de fenómenos físicos, químicos y biológicos.",
+    "res_correcta": 0,
     "area": "CBAP",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -34,6 +38,7 @@
   {
     "id": 5,
     "Reactivo": "Me gustaría o interesaría Asistir a exposiciones donde se muestren avances tecnológicos que apoyen el área de la salud.",
+    "res_correcta": 0,
     "area": "CS",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -41,6 +46,7 @@
   {
     "id": 6,
     "Reactivo": "Me gustaría o interesaría Coleccionar revistas que traten asuntos de mecánica o de armar cosas.",
+    "res_correcta": 0,
     "area": "CBI",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -48,6 +54,7 @@
   {
     "id": 7,
     "Reactivo": "Me gustaría o interesaría Participar en movimientos sociales a favor de los derechos y obligaciones de las personas.",
+    "res_correcta": 0,
     "area": "CSH",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -55,6 +62,7 @@
   {
     "id": 8,
     "Reactivo": "Me gustaría o interesaría Armar y desarmar aparatos eléctricos y electrónicos para conocer las partes que lo componen y su funcionamiento",
+    "res_correcta": 0,
     "area": "CBI",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -62,6 +70,7 @@
   {
     "id": 9,
     "Reactivo": "Me gustaría o interesaría Generar información contable y financiera para todos los agentes económicos interesados (clientes, inversores, proveedores, etc.).",
+    "res_correcta": 0,
     "area": "CEA",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     
@@ -69,6 +78,7 @@
   {
     "id": 10,
     "Reactivo": "Me gustaría o interesaría Participar en actividades de reforestación agrícola y conservación de recursos naturales.",
+    "res_correcta": 0,
     "area": "CBAP",
                 "respuestas" : [                  {                     "respuesta" : "Si",                     "val_respuesta" : true,                     "valor" : 1                 },                  {                     "respuesta" : "NO",                     "val_respuesta" : false,                     "valor" : 0                 }             ],             "ans" : 1
     

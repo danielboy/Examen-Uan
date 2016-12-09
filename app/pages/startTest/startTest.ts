@@ -1,46 +1,63 @@
 import {Component} from "@angular/core";
 import {NavController, NavParams, AlertController} from 'ionic-angular';
-import {QuizService} from '../../services/authservice';
+import {AuthService} from '../../services/authservice';
 import {Result} from '../result/result';
 
 
 
 @Component({
     templateUrl: 'build/pages/startTest/startTest.html',
-    providers: [QuizService]
+    providers: [AuthService]
 
 })
 export class StartTest {
-    Questions: any[];
+    data: any;
+    preguntas: any;
+    Questions: any;
     indexOfQuestion: number = 0;
-    area1: number = 0;
-    area2: number = 0;
-    area3: number = 0;
-    areas: number = 0;
+    CS: number = 0;
+    CSH: number = 0;
+    CEA: number = 0;
+    CBAP: number = 0;
+    CBI: number = 0;
+    areas: string;
     ans: any[];
     questionNo: number = 0;
     answerValue = null;
     answersNumber: number = 0;
     answerIndex: number = 0;
     correctAnsInd: any;
-    serve :any;
+    service :any;
     navParamsdata: any;
     lengthOfQuizQuestions: any;
-    constructor(private nav: NavController, public navParams: NavParams, serve: QuizService, private alertCtrl: AlertController) {
+    constructor(private nav: NavController, serve: AuthService, private alertCtrl: AlertController) {
     
-       this.navParamsdata = navParams.data;
+       
        this.nav = nav;
 
-       this.serve = serve;
-       this.Questions = serve.quizData[navParams.data].Questions[this.indexOfQuestion];
-       this.areas = serve.quizData[navParams.data].Questions[this.indexOfQuestion].Area;
-       this.ans = serve.quizData[navParams.data].Questions[this.indexOfQuestion].options;
-       this.correctAnsInd = serve.quizData[navParams.data].Questions[this.indexOfQuestion].correctAns;
-       this.lengthOfQuizQuestions = serve.quizData[navParams.data].Questions.length;
-       
-
+       this.service = serve;
+       this.Questions = 
+       {
+           Reactivo: '',
+           area:'',
+           id: ';'
+       }
 
     }
+
+    onPageLoaded() {
+    this.service.preguntas().then( data => {
+
+        this.data = data;
+        this.Questions = this.data[this.indexOfQuestion];
+        this.areas = this.data[this.indexOfQuestion].area;
+        this.ans = this.data[this.indexOfQuestion].respuestas;
+        this.correctAnsInd = this.data[this.indexOfQuestion].res_correcta;
+        this.lengthOfQuizQuestions = this.data.length;
+
+       });
+  }
+
     next(opt: any) {
 
         if(this.answerValue == null){
@@ -50,36 +67,45 @@ export class StartTest {
                 buttons: ['Ok']
                 });
             alert.present();
-
+            
             return;
         }
 
-        if(opt == this.ans[this.correctAnsInd].option && this.areas == 1){
-            this.area1++;
+        if(opt == this.ans[this.correctAnsInd].respuesta && this.areas == 'CS'){
+            this.CS++;
         }
-        if(opt == this.ans[this.correctAnsInd].option && this.areas == 2){
-            this.area2++;
+        if(opt == this.ans[this.correctAnsInd].respuesta && this.areas == 'CSH'){
+           this.CSH++;
         }
-        if(opt == this.ans[this.correctAnsInd].option && this.areas == 3){
-            this.area3++;
+        if(opt == this.ans[this.correctAnsInd].respuesta && this.areas == 'CEA'){
+            this.CEA++;
         }
+        if(opt == this.ans[this.correctAnsInd].respuesta && this.areas == 'CBAP'){
+            this.CBAP++;
+        }
+        if(opt == this.ans[this.correctAnsInd].respuesta && this.areas == 'CBI'){
+            this.CBI++;
+        }             
 
        
 
         if(this.indexOfQuestion + 1 < this.lengthOfQuizQuestions){
           this.indexOfQuestion++;
-          this.Questions = this.serve.quizData[this.navParamsdata].Questions[this.indexOfQuestion];
-          this.areas = this.serve.quizData[this.navParams.data].Questions[this.indexOfQuestion].Area;
-          this.ans = this.serve.quizData[this.navParamsdata].Questions[this.indexOfQuestion].options;
-          this.correctAnsInd = this.serve.quizData[this.navParamsdata].Questions[this.indexOfQuestion].correctAns;
+          this.Questions = this.data[this.indexOfQuestion];
+          this.areas = this.data[this.indexOfQuestion].area;
+          this.ans = this.data[this.indexOfQuestion].respuestas;
+          this.correctAnsInd = this.data[this.indexOfQuestion].res_correcta;
           this.answerIndex++;
           this.answerValue = null;
+          console.log(this.CS, this.CSH)
         }
         else{
-          this.nav.push(Result, {
-            a1: this.area1,
-            a2: this.area2,
-            a3: this.area3,
+         this.nav.push(Result, {
+            CS: this.CS,
+            CSH: this.CSH,
+            CEA: this.CEA,
+            CBAP: this.CBAP,
+            CBI: this.CBI,
           });
         
         }

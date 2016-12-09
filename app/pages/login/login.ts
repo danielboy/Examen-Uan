@@ -30,6 +30,9 @@ export class LoginPage {
 
                 return true;
             }
+
+                console.log(user)
+
              if(user == null) {
                 let alert = this.alertCtrl.create({
                   title: 'Datos Invalidos!',
@@ -45,3 +48,4 @@ export class LoginPage {
 }
 
 }
+

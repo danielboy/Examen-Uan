@@ -1,38 +1,37 @@
 import {Component} from "@angular/core";
 import {NavController, NavParams} from 'ionic-angular';
 import {UserPage} from '../user/user';
-import {QuizService, AuthService} from '../../services/authservice';
+import {AuthService} from '../../services/authservice';
 import {RoundOfPipe, OrderBy} from '../../pipe/pipe';
 
 
 @Component({
     templateUrl: 'build/pages/result/result.html',
-    providers: [QuizService, AuthService],
+    providers: [ AuthService],
     pipes: [RoundOfPipe, OrderBy]
 })
 export class Result {
   private service: any;
   result: any;
   porcentage: any;
-  a1: number;
-  a2: number;
-  a3: number;
   CS: number;
   CSH: number;
   CEA: number;
   CBAP: number;
   CBI: number;
   public resul;
-  constructor(private nav: NavController, public navParams: NavParams, serve: QuizService, private authservice: AuthService) {
+  constructor(private nav: NavController, public navParams: NavParams, private authservice: AuthService) {
 
-    this.service = authservice;
+
     this.nav = nav;
     this.result = navParams.data;
-    this.CS = (100 / 3) * this.result.a1;
-    this.CSH = (100 / 3) * this.result.a2;
-    this.CEA = (100 / 3) * this.result.a3;
-    this.CBAP = (100 / 3) * this.result.a1;
-    this.CBI = (100 / 3) * this.result.a2;
+
+    console.log(navParams.data, 'Resultados')
+    this.CS = (100 / 2) * this.result.CS;
+    this.CSH = (100 / 2) * this.result.CSH;
+    this.CEA = (100 / 2) * this.result.CEA;
+    this.CBAP = (100 / 2) * this.result.CBAP;
+    this.CBI = (100 / 2) * this.result.CBI;
 
 
                         this.resul = [

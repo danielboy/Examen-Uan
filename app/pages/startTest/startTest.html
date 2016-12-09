@@ -3,43 +3,28 @@
     <ion-title>Test</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="home">
+<ion-content class="startTest">
 
 <ion-card>
   <ion-card-header>
-   <h2> Pregunta: {{Questions.QuiestionNo}}</h2>
+    <h2> Pregunta: {{Questions.id}}</h2>
   </ion-card-header>
     <h5> Opcion seleccionada:   {{ + answerValue}}</h5>
     <br>
-    <p text-justify>{{Questions.Question}}</p>       
+    <ion-grid>
+        <ion-row>
+    <ion-col text-justify width-80 offset-10  >{{Questions.Reactivo}}</ion-col>  
+        </ion-row>
+    </ion-grid>     
   <ion-card-content>
     <ion-list radio-group [(ngModel)]="answerValue" >
         <ion-item *ngFor="let answer of ans">
-            <ion-label>{{answer.option}}</ion-label>
-            <ion-radio value="{{answer.option}}"></ion-radio>
+            <ion-label>{{answer.respuesta}}</ion-label>
+            <ion-radio value="{{answer.respuesta}}"></ion-radio>
         </ion-item>
     </ion-list>
   </ion-card-content>
 </ion-card>
-
-
-
-
-
-
-
-<!--   <h3 class="timer">Pregunta: {{Questions.QuiestionNo}}</h3>
-    <ion-list-header>
-        Opcion seleccionada: {{answerValue}}
-    </ion-list-header>
-
-    <ion-list radio-group [(ngModel)]="answerValue" >
-        <ion-item *ngFor="let answer of ans">
-            <ion-label>{{answer.option}}</ion-label>
-            <ion-radio value="{{answer.option}}"></ion-radio>
-        </ion-item>
-    </ion-list>-->
-
     <button block primary (click)="next(answerValue)">Siguiente</button>
 
 </ion-content>
