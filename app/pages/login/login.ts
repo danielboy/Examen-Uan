@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController, AlertController} from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {UserPage} from '../user/user';
+import {DatosPage} from '../Datos/Datos';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class LoginPage {
     private service: any;
     private nav: any;
     private dusers: any;
+    private datause: any;
     constructor(private authservice: AuthService, private navcontroller: NavController, private alertCtrl: AlertController) {
         this.usercreds = {
             matricula: '',
@@ -23,11 +25,9 @@ export class LoginPage {
         this.nav = navcontroller;
     }
     login(user) {
-
         this.service.authenticate(user).then(data => {
             if(data) {
                 this.nav.setRoot(UserPage);
-
                 return true;
             }
 
@@ -46,6 +46,8 @@ export class LoginPage {
 
     });
 }
+
+
 
 }
 

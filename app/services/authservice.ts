@@ -39,12 +39,12 @@ export class AuthService {
         headers.append('Content-Type', 'application/json');
         return new Promise(resolve => {
             this.http.post('http://localhost:3333/authenticate',JSON.stringify(user), {headers: headers}).subscribe(data => {
+                this.data = data;
                 if(data.json()&& data.json().token){
                     this.storeUserCredentials({
                         "token": data.json().token
-
+                  
                     });
-                     
                     resolve(true);
 
                 }
@@ -78,7 +78,6 @@ export class AuthService {
    areas() {
         return new Promise(resolve => {
             let headers = new Headers();
-          //   headers.append('Authorization', 'Bearer ' + this.AuthToken.token);
              this.http.get('http://localhost:3333/areas/', {headers: headers}).subscribe(data => {
                 this.data = data;
                  if(data.json().areas){
@@ -110,31 +109,29 @@ export class AuthService {
         })
     }        
 
-   preguntas() {
+   preguntas(grado) {
         return new Promise(resolve => {
+            console.log(grado)
             let headers = new Headers();
-             this.http.get('http://localhost:3333/preguntas/', {headers: headers}).subscribe(data => {
-                this.data = data;
-                 if(data.json().preguntas){
-
-                     resolve(data.json().preguntas);
+             this.http.get('http://localhost:3333/preguntas'+grado +'/', {headers: headers}).subscribe(data => {
+                 if(data = data.json()){
+                     resolve(data["preguntas"+grado]);
                  }
                  else
                      resolve(false);
 
-                     console.log(data)
              });
         })
     } 
 
-   putinfo(resul) {
+   putinfo(resultado) {
         return new Promise(resolve => {
-            console.log(resul)
+            console.log(resultado)
             let headers = new Headers();
             this.loadUserCredentials();
              headers.append('Authorization', 'Bearer ' + this.AuthToken.token);
              headers.append('Content-Type','application/json');
-             this.http.put('http://localhost:3333/putinfo/',JSON.stringify(resul),{headers: headers}).subscribe(data => {
+             this.http.put('http://localhost:3333/putinfo/',JSON.stringify(resultado),{headers: headers}).subscribe(data => {
                 this.data = data;
                  if(data.json().decodedtoken){
 

@@ -28,25 +28,26 @@ export class StartTest {
     answerIndex: number = 0;
     correctAnsInd: any;
     service :any;
-    navParamsdata: any;
+    grado: any;
+    
     lengthOfQuizQuestions: any;
-    constructor(private nav: NavController, serve: AuthService, private alertCtrl: AlertController) {
+    constructor(private nav: NavController, serve: AuthService, private alertCtrl: AlertController,public navParams: NavParams) {
     
        
        this.nav = nav;
-
+       this.grado = navParams.data;
        this.service = serve;
        this.Questions = 
        {
            Reactivo: '',
            area:'',
-           id: ';'
+           id: ''
        }
 
     }
 
     onPageLoaded() {
-    this.service.preguntas().then( data => {
+    this.service.preguntas(this.grado).then( data => {
 
         this.data = data;
         this.Questions = this.data[this.indexOfQuestion];
@@ -97,7 +98,7 @@ export class StartTest {
           this.correctAnsInd = this.data[this.indexOfQuestion].res_correcta;
           this.answerIndex++;
           this.answerValue = null;
-          console.log(this.CS, this.CSH)
+         
         }
         else{
          this.nav.push(Result, {

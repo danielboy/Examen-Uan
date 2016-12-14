@@ -2,6 +2,7 @@ import { Component} from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {UserPage} from '../user/user';
+import {StartTest} from '../startTest/startTest';
 import {CarrerasPage} from '../carreras/carreras';
 import {RoundOfPipe, OrderBy} from '../../pipe/pipe';
 
@@ -27,6 +28,7 @@ export class DatosPage {
                     matricula: '-',
                     escuela: '_',
                     turno: '_',
+                    grado: '_',
                     grupo: '_',                       
 
                 }
@@ -40,7 +42,8 @@ onPageLoaded() {
                     matricula: data.matricula,
                     escuela: data.escuela,
                     turno: data.turno,
-                    grupo: data.grupo,                    
+                    gra_gru: data.grado +'°'+data.grupo,
+                                    
                 }
 
 
@@ -89,6 +92,9 @@ goCarreras(clave){
 		this.nav.push(CarrerasPage, {clave: clave});
 	}    
 
+gostart(){
+        this.nav.push(StartTest);
+        	}   
 
 }
 

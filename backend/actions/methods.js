@@ -1,5 +1,6 @@
 var User = require('../models/user');
-var preguntas = require('../models/preguntas');
+var preguntas2 = require('../models/preguntas2');
+var preguntas3 = require('../models/preguntas3');
 var areas = require('../models/areas');
 var carreras = require('../models/carreras');
 var jwt  = require('jwt-simple');
@@ -131,21 +132,35 @@ var functions = {
           },
 
 
-      // Consulta Preguntas
-      preguntas: function(req, res){
-      preguntas.find({}, function(err, preguntas) {
+      // Consulta Preguntas2
+      preguntas2: function(req, res){
+      preguntas2.find({}, function(err, preguntas2) {
                 if (err){
                   console.log(err);
                   res.json({success:false, msg:'Hola no sirve'})
                 }
 
                 else {
-                  res.json({success:true, msg:'HOla', preguntas});
+                  res.json({success:true, msg:'HOla', preguntas2});
                 }
-        console.log(preguntas);
+        console.log(preguntas2);
       });
       },
 
+      // Consulta Preguntas3
+      preguntas3: function(req, res){
+      preguntas3.find({}, function(err, preguntas3) {
+                if (err){
+                  console.log(err);
+                  res.json({success:false, msg:'Hola no sirve'})
+                }
+
+                else {
+                  res.json({success:true, msg:'HOla', preguntas3});
+                }
+        console.log(preguntas3);
+      });
+      },
      // Consulta areas
       areas: function(req, res){
       areas.find({}, function(err, areas) {

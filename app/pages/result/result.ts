@@ -13,6 +13,7 @@ import {RoundOfPipe, OrderBy} from '../../pipe/pipe';
 export class Result {
   private service: any;
   result: any;
+  resultado: any;
   porcentage: any;
   CS: number;
   CSH: number;
@@ -25,8 +26,8 @@ export class Result {
 
     this.nav = nav;
     this.result = navParams.data;
-
-    console.log(navParams.data, 'Resultados')
+    this.service = authservice;
+  
     this.CS = (100 / 2) * this.result.CS;
     this.CSH = (100 / 2) * this.result.CSH;
     this.CEA = (100 / 2) * this.result.CEA;
@@ -57,16 +58,19 @@ export class Result {
                         puntos: this.CBI,
                     }
                 ]
-
+                
+                this.resultado = {CS:this.CS, CSH:this.CSH, CEA:this.CEA, CBAP:this.CBI, CBI:this.CBI}
+                 console.log(this.resultado)
   }
 
-   onPageLoaded(resul) {
-    this.service.putinfo({CS:this.CS, CSH:this.CSH, CEA:this.CEA, CBAP:this.CBI, CBI:this.CBI}).subscribe(
-       data => {
 
+
+  onPageLoaded(resultado) {
+    this.service.putinfo(this.resultado).subscribe(
+       data => {
+   
        });
   }
-
 
   goUserPage(){
 		this.nav.push(UserPage);	}

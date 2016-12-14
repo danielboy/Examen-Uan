@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {NavController,NavParams} from 'ionic-angular';
 import {AuthService} from '../../services/authservice';
 import {HomePage} from '../home/home';
 import {LoginPage} from '../login/login';
@@ -14,19 +14,34 @@ export class UserPage {
 
     private service: any;
     private nav: NavController;
+    datause: any;
+    
 
-    constructor(private authservice: AuthService, private navcontroller: NavController) {
+    constructor(private authservice: AuthService, private navcontroller: NavController,public navParams: NavParams) {
         this.service = authservice;
         this.nav = navcontroller;
+    
+
+
     }
     gostart(){
-        this.nav.push(StartTest);
+        this.nav.push(StartTest, this.datause);
         	}    
     
     logout() {
         this.service.logout();
         this.nav.setRoot(LoginPage);
     }
+
+  onPageLoaded() {
+    this.service.getinfo().then(data => {
+       this.datause = data.grado
+   console.log(this.datause);
+
+       });
+  }
+
+
     
     perfil() {
 

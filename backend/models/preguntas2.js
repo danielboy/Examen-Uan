@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var preguntasSchema = new Schema({
+var preguntas2Schema = new Schema({
   id: {
     type: Number,
     unique: true,
@@ -23,4 +23,4 @@ var preguntasSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('preguntas', preguntasSchema);
+module.exports = mongoose.model('preguntas2', preguntas2Schema);
